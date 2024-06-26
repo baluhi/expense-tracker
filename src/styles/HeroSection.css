@@ -1,0 +1,86 @@
+/* src/styles/HeroSection.css */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 7% auto;
+  width: 100%;
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 100px;
+  background-color: #0d0c0c;
+  color: #ffff;
+  border-radius: 5px;
+}
+
+.hero-text{
+    border: .5px solid #edeaeacc;
+    border-radius: 10px;
+    margin-right: 10%;
+    padding: 8%;
+    font-size: 15px;
+    color:rgb(236, 238, 240);
+}
+
+.hero-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* Basic Button Style */
+.button {
+  background-color: #6200ea; /* Purple background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 12px 24px; /* Padding for size */
+  font-size: 16px; /* Font size */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover Effects */
+.button:hover {
+  background-color: #3700b3; /* Darker purple on hover */
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Larger shadow */
+}
+
+/* Focus Effects */
+.button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.4); /* Purple focus ring */
+}
+
+/* Active State */
+.button:active {
+  transform: scale(0.98); /* Slightly decrease size */
+  background-color: #5600e8; /* Slightly different shade */
+}
+
+/* Disabled State */
+.button:disabled {
+  background-color: #bdbdbd; /* Gray background */
+  cursor: not-allowed; /* Not allowed cursor */
+  box-shadow: none; /* Remove shadow */
+  opacity: 0.6; /* Slightly transparent */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+}
